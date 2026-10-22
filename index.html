@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aura Vibes Fest: festival trimestral de música electrónica en Cali, Colombia.">
+  <meta name="theme-color" content="#07030f">
+  <title>Aura Vibes Fest | Música electrónica en Cali</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="site-header" id="inicio-header">
+    <a href="#inicio" class="logo">AURA<span>VIBES</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#proximo-evento">Próximo evento</a>
+      <a href="#cartel">Cartel</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Festival de música electrónica · Cali, Colombia</p>
+        <h1>AURA <span class="gradient-text">VIBES</span> FEST</h1>
+        <p class="tagline">Un universo de luz, sonido y energía. Cada trimestre.</p>
+        <a href="#proximo-evento" class="btn btn-primary">Ver próximo evento</a>
+        <a href="#galeria" class="btn btn-outline">Revivir ediciones</a>
+      </div>
+      <a href="#proximo-evento" class="scroll-hint" aria-label="Desplazarse hacia abajo">↓</a>
+    </section>
+
+    <!-- PRÓXIMO EVENTO + CUENTA REGRESIVA -->
+    <section class="section" id="proximo-evento">
+      <div class="container">
+        <h2 class="section-title">Próximo <span class="gradient-text">evento</span></h2>
+        <p class="section-subtitle" id="eventoFecha">Fecha por confirmar</p>
+
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div class="time-box"><span id="dias">00</span><small>Días</small></div>
+          <div class="time-box"><span id="horas">00</span><small>Horas</small></div>
+          <div class="time-box"><span id="minutos">00</span><small>Minutos</small></div>
+          <div class="time-box"><span id="segundos">00</span><small>Segundos</small></div>
+        </div>
+
+        <div class="event-info">
+          <div class="info-card">
+            <h3>Lugar</h3>
+            <p>Cali, Valle del Cauca<br><em>Recinto por anunciar</em></p>
+          </div>
+          <div class="info-card">
+            <h3>Horario</h3>
+            <p>Apertura de puertas<br><em>Hora por anunciar</em></p>
+          </div>
+          <div class="info-card">
+            <h3>Boletería</h3>
+            <p>Información de preventa<br><em>Próximamente</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTEL DE ARTISTAS -->
+    <section class="section section-alt" id="cartel">
+      <div class="container">
+        <h2 class="section-title">Cartel de <span class="gradient-text">artistas</span></h2>
+        <p class="section-subtitle">Anunciaremos la alineación oficial próximamente.</p>
+
+        <div class="lineup">
+          <article class="artist-card"><div class="artist-photo"></div><h3>Artista 1</h3><p>Por anunciar</p></article>
+          <article class="artist-card"><div class="artist-photo"></div><h3>Artista 2</h3><p>Por anunciar</p></article>
+          <article class="artist-card"><div class="artist-photo"></div><h3>Artista 3</h3><p>Por anunciar</p></article>
+          <article class="artist-card"><div class="artist-photo"></div><h3>Artista 4</h3><p>Por anunciar</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA AUDIOVISUAL -->
+    <section class="section" id="galeria">
+      <div class="container">
+        <h2 class="section-title">Galería <span class="gradient-text">audiovisual</span></h2>
+        <p class="section-subtitle">Momentos de nuestras ediciones anteriores.</p>
+
+        <!-- Video destacado -->
+        <div class="video-frame">
+          <!--
+            PARA INCORPORAR SU VIDEO:
+            Opción A (recomendada): reemplace el bloque "video-placeholder" por el código
+            de inserción de YouTube o Vimeo:
+            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" title="Aftermovie Aura Vibes Fest" allowfullscreen></iframe>
+
+            Opción B: video alojado en el repositorio (carpeta multimedia/videos/):
+            <video controls preload="metadata" poster="multimedia/imagenes/portada-video.jpg">
+              <source src="multimedia/videos/aftermovie.mp4" type="video/mp4">
+            </video>
+          -->
+          <div class="video-placeholder">
+            <span class="play-icon">▶</span>
+            <p>Aftermovie oficial · Próximamente</p>
+          </div>
+        </div>
+
+        <!-- Cuadrícula de fotografías -->
+        <div class="gallery">
+          <figure class="gallery-item g1"><figcaption>Edición 1 · Escenario principal</figcaption></figure>
+          <figure class="gallery-item g2"><figcaption>Edición 1 · Público</figcaption></figure>
+          <figure class="gallery-item g3"><figcaption>Edición 2 · Iluminación</figcaption></figure>
+          <figure class="gallery-item g4"><figcaption>Edición 2 · Artistas</figcaption></figure>
+          <figure class="gallery-item g5"><figcaption>Edición 3 · Ambiente</figcaption></figure>
+          <figure class="gallery-item g6"><figcaption>Edición 3 · Cierre</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO Y REDES -->
+    <section class="section section-alt" id="contacto">
+      <div class="container contact">
+        <h2 class="section-title">Sea parte de la <span class="gradient-text">experiencia</span></h2>
+        <p class="section-subtitle">Síganos para conocer el anuncio de cada edición.</p>
+        <div class="contact-actions">
+          <!-- Reemplace TU_USUARIO y el número de WhatsApp (formato: 57 + número, sin espacios) -->
+          <a class="btn btn-primary" href="https://www.instagram.com/aura_vibesofi" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn btn-outline" href="https://wa.me/573127488361" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="anio"></span> Aura Vibes Fest · Cali, Colombia. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
